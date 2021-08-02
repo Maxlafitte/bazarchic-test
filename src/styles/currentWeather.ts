@@ -4,6 +4,7 @@ export const CurrentContainer = styled.div`
 	display: flex;
 	flex-direction: row;
 `
+
 export const CurrentWeatherTitle = styled.h2`
     margin: 0px;
     padding: 5px 0px;
@@ -12,6 +13,7 @@ export const CurrentWeatherTitle = styled.h2`
 export const Separation = styled.hr`
     width: 100%;
 `
+
 export const CurrentWeatherInfo = styled.div`
 	display: flex;
     width: 70%;
@@ -21,6 +23,7 @@ export const CurrentWeatherInfo = styled.div`
     color: white;
     padding: 15px 25px;
 `
+
 export const CurrentWeatherDescription = styled.div`
     display: flex;
     align-items: center;
@@ -28,6 +31,7 @@ export const CurrentWeatherDescription = styled.div`
         font-weight: lighter;
     }
 `
+
 export const CurrentLogo = styled.div`
     background-color: #0082d6;
     align-items: center;
