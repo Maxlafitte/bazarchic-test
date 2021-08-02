@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import { device } from './devices'
 
+// global styles than can be applied in multiple components
 export const Container = styled.div`
   display: block;
   margin: 5% 20%;
@@ -15,4 +16,8 @@ export const Paragraph = styled.div`
 `
 export const Loading = styled.div`
   text-align: center;
+`
+
+export const Separation = styled.hr`
+    width: 100%;
 `

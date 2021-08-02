@@ -1,12 +1,12 @@
-export interface ForecastWeatherProps {
-    list: List[]
-}
 
 export interface CurrentWeatherProps {
     name: string,
     main: TempValues,
     weather: WeatherDescription,
     dt: number
+}
+export interface ForecastWeatherProps {
+    list: List[]
 }
 
 interface List {

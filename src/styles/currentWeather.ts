@@ -1,5 +1,6 @@
 import styled from "styled-components"
 
+// Style for the currentWeather.tsx component
 export const CurrentContainer = styled.div`
 	display: flex;
 	flex-direction: row;
@@ -9,11 +10,6 @@ export const CurrentWeatherTitle = styled.h2`
     margin: 0px;
     padding: 5px 0px;
 `
-
-export const Separation = styled.hr`
-    width: 100%;
-`
-
 export const CurrentWeatherInfo = styled.div`
 	display: flex;
     width: 70%;
