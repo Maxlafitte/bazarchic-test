@@ -1,5 +1,6 @@
 import "styled-components"
 
+// Helpers for media-queries
 const size = {
     mobileS: '320px',
     mobileM: '375px',

@@ -5,18 +5,19 @@ import { CurrentContainer,
          CurrentWeatherTitle, 
          CurrentWeatherDescription, 
          CurrentLogo, 
-         CurrentWeatherInfo, 
-         Separation 
+         CurrentWeatherInfo 
         } from "../styles/currentWeather";
-import { Paragraph, Loading } from "../styles/globalStyle";
+import { Paragraph, Loading, Separation } from "../styles/globalStyle";
 import Moment from 'react-moment';
 import moment from 'moment';
 
 const CurrentWeather = () => {
 
-    const [current, setCurrent] = useState<CurrentWeatherProps | null>(null)
+    const [current, setCurrent] = useState<CurrentWeatherProps>()
     const [loading, setLoading] = useState(true)
 
+    // Fetch current weather with openweather, with the endPoint weather,
+    // Then set the state with the data 
     const fetchWeather = () => {
         axios.get<CurrentWeatherProps>(`https://api.openweathermap.org/data/2.5/weather?q=paris&units=metric&appid=${process.env.REACT_APP_WEATHER_API_KEY}`)
         .then(res => {
@@ -29,6 +30,7 @@ const CurrentWeather = () => {
         })
     }
 
+    // Call fetchWeather in useEffect, so it mounts when the page loads
     useEffect(() => {
         fetchWeather()
     }, [])
